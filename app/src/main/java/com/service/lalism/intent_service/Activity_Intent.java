@@ -30,6 +30,8 @@ public class Activity_Intent extends AppCompatActivity {
 
     }
 
+
+
     private class DownloadReceiver extends ResultReceiver {
 
         public DownloadReceiver(Handler handler) {

@@ -12,12 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".intent_service.Activity_Intent">
+        <!--    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".bound_service.Activity_Bound"
+
+
+            >
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".bound_service.Service_Bound" />
+        <service android:name=".intent_service.Service_Intent" />
     </application>
 
 </manifest>
