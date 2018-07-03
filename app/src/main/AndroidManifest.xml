@@ -12,17 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".intent_service.Activity_Intent">
-        <!--    <intent-filter>
+
+            <!--
+                <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
-        <activity android:name=".bound_service.Activity_Bound"
+        <activity android:name=".bound_service.Activity_Bound">
 
+        </activity>
 
-            >
+        <service android:name=".bound_service.Service_Bound" />
+        <service android:name=".intent_service.Service_Intent" />
 
+        <activity android:name=".bound_service.Activity_Bound_Messenger">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,9 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name=".bound_service.Service_Bound" />
-        <service android:name=".intent_service.Service_Intent" />
+        <service android:name=".bound_service.Service_Bound_Messenger"/>
     </application>
 
 </manifest>

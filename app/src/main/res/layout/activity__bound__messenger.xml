@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bound_service.Activity_Bound_Messenger">
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="msg1Click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="125dp"
+        android:text="MSG1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="127dp" />
+
+    <Button
+
+        android:onClick="msg2Click"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button2"
+        android:layout_centerVertical="true"
+        android:text="MSG2"
+        android:layout_alignLeft="@+id/button2" />
+</RelativeLayout>
